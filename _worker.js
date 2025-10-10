@@ -1,19 +1,13 @@
 import { connect } from "cloudflare:sockets";
 
 // Variables
-const rootDomain = "pages.dev"; // Ganti dengan domain utama kalian
-const serviceName = "ebasbisa"; // Ganti dengan nama workers kalian
-const apiKey = "iDvfI_1dIlHlc22flEFnCSJdTurPHfeb0YEMwIPH"; // Ganti dengan Global API key kalian (https://dash.cloudflare.com/profile/api-tokens)
-const apiEmail = "saepulbastian17@proton.me"; // Ganti dengan email yang kalian gunakan
-const accountID = "110167dd1c83bf2acbee4a8091f44653"; // Ganti dengan Account ID kalian (https://dash.cloudflare.com -> Klik domain yang kalian gunakan)
-const zoneID = "0174e6241b816fd11a31972aa557f878"; // Ganti dengan Zone ID kalian (https://dash.cloudflare.com -> Klik domain yang kalian gunakan)
-let isApiReady = false;
-let proxyIP = "https://raw.githubusercontent.com/FoolVPN-ID/Nautica/refs/heads/main/proxyList.txt";
-let cachedProxyList = [];
+let serviceName = "ebasbisa";
+let APP_DOMAIN = "ebas.biz.id";
+
+let prxIP = "";
+let cachedPrxList = [];
 
 // Constant
-const APP_DOMAIN = `${serviceName}.${rootDomain}`;
-
 const horse = "dHJvamFu";
 const flash = "dm1lc3M=";
 const v2 = "djJyYXk=";
